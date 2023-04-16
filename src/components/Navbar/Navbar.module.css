@@ -1,40 +1,37 @@
 .Navbar {
-    background-color: var(--orange);
-    padding: 30px 0;
+  background-color: var(--orange);
+  padding: 30px 0;
 }
 
 .row {
-    justify-content: space-between;
-    align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar__left a {
-    width: 250px;
-    height: auto;
-    display: block;
+  width: 250px;
+  height: auto;
+  display: block;
 }
 
-
 .navbar__left a img {
-    width: 100%;
+  width: 100%;
 }
 
 .navbar__right ul {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .navbar__right ul li {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
-
-@import url('https://fonts.googleapis.com/css2?family=Tienne&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Tienne&display=swap");
 
 .navbar__right ul li a {
-    font-size: 20px;
-    font-family: 'Tienne', serif;
-    color: black;
-    text-transform: uppercase;
+  font-size: 18px;
+  font-family: "Tienne", serif;
+  color: black;
+  text-transform: uppercase;
 }
