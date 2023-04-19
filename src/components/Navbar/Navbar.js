@@ -15,13 +15,13 @@ function Navbar() {
           <div className={classes.navbar__right}>
             <ul>
               <li>
-                <Link to={"/"}>Contacts</Link>
+                <Link to={"/about"}>Biz Haqimizda</Link>
               </li>
               <li>
-                <Link to={"/"}>Contacts</Link>
+                <Link to={"/services"}>Xizmatlar</Link>
               </li>
               <li>
-                <Link to={"/"}>Contacts</Link>
+                <Link to={"/customers"}>Mijozlar</Link>
               </li>
             </ul>
           </div>
