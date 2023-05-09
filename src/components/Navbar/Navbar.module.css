@@ -1,6 +1,7 @@
 .Navbar {
-  background-color: var(--orange);
-  padding: 30px 0;
+  background-color: var(--dark);
+  padding: 35px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.20);
 }
 
 .row {
@@ -9,14 +10,13 @@
 }
 
 .navbar__left a {
-  width: 250px;
-  height: auto;
-  display: block;
+  font-size: 35px;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1.2px;
 }
 
-.navbar__left a img {
-  width: 100%;
-}
 
 .navbar__right ul {
   display: flex;
@@ -27,11 +27,64 @@
   margin-left: 30px;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Tienne&display=swap");
+.navbar__right ul button {
+  padding: 13px 30px;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 25px;
+  border: 2px solid var(--orange);
+  background: var(--dark);
+  transition: .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  margin-left: 15px;
+}
+
+.navbar__right ul button span {
+  position: relative;
+  z-index: 3;
+}
+
+.navbar__right ul button::after {
+  content: "";
+  width: 0%;
+  height: 100%;
+  background-color: var(--orange);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: .3s;
+}
+
+.navbar__right ul button:hover::after {
+  width: 100%;
+}
 
 .navbar__right ul li a {
   font-size: 18px;
-  font-family: "Tienne", serif;
-  color: black;
-  text-transform: uppercase;
+  font-family: 'Catamaran', sans-serif;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  transition: .3s;
+}
+
+.navbar__right ul li a::after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  background-color: red;
+  transition: .3s;
+  display: block;
+}
+
+.navbar__right ul li a:hover {
+  color: var(--orange);
+}
+
+.navbar__right ul li a:hover::after {
+  width: 50%;
 }

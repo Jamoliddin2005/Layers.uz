@@ -8,9 +8,7 @@ function Navbar() {
       <div className="container">
         <div className={`row ${classes.row}`}>
           <div className={classes.navbar__left}>
-            <Link to={"/"}>
-              <img src="/images/logo-color.png" alt="" />
-            </Link>
+            <Link to={"/"}>Layers.uz</Link>
           </div>
           <div className={classes.navbar__right}>
             <ul>
@@ -22,6 +20,11 @@ function Navbar() {
               </li>
               <li>
                 <Link to={"/customers"}>Mijozlar</Link>
+              </li>
+              <li>
+                <button>
+                  <span>Biz bilan boshlang!</span>
+                </button>
               </li>
             </ul>
           </div>
