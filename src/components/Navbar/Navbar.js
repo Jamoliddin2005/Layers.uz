@@ -21,8 +21,18 @@ function Navbar() {
               <li>
                 <Link to={"/customers"}>Mijozlar</Link>
               </li>
+
               <li>
-                <button>
+                <select name="" id="">
+                  <option value="UZ">
+                    <img src="/images/uzb.png" alt="" />
+                    UZ
+                  </option>
+                  <option value="RU">RU</option>
+                </select>
+              </li>
+              <li>
+                <button className="hover-effect">
                   <span>Biz bilan boshlang!</span>
                 </button>
               </li>
