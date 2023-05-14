@@ -12,7 +12,7 @@
 .navbar__left a {
   font-size: 35px;
   font-family: 'Montserrat', sans-serif;
-  color: #fff;
+  color: var(--white);
   font-weight: 700;
   letter-spacing: 1.2px;
 }
@@ -31,7 +31,7 @@
 .navbar__right ul li a {
   font-size: 18px;
   font-family: 'Catamaran', sans-serif;
-  color: #fff;
+  color: var(--white);
   font-weight: 500;
   font-size: 18px;
   transition: .3s;
@@ -60,5 +60,5 @@
   padding: 10px 12px;
   cursor: pointer;
   outline: none;
-
+  border-radius: 2px;
 }

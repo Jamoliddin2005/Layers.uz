@@ -1,8 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import classes from "./Navbar.module.css";
 import { Link } from "react-router-dom";
+import Translate from "../Translate/Translate"
 
 function Navbar() {
+  const [languageList] = useState(["RU", "EN", "UZ"]);
+  const [language, setLanguage] = useState([]);
+
+
+  const Language = () => {
+    const lan = languageList;
+    const target = lan.splice(
+      lan.indexOf(localStorage.getItem("language") || "RU"),
+      1
+    );
+    lan.unshift(target[0]);
+    setLanguage(lan);
+  };
+  useEffect(() => {
+    Language();
+  }, []);
+
   return (
     <nav className={classes.Navbar}>
       <div className="container">
@@ -13,27 +31,34 @@ function Navbar() {
           <div className={classes.navbar__right}>
             <ul>
               <li>
-                <Link to={"/about"}>Biz Haqimizda</Link>
+                <Link to={"/about"}>{Translate("О нас", "Biz Haqimizda", "About Us")}</Link>
               </li>
               <li>
-                <Link to={"/services"}>Xizmatlar</Link>
+                <Link to={"/services"}>{Translate("Услуги", "Xizmatlar", "Services")}</Link>
               </li>
               <li>
-                <Link to={"/customers"}>Mijozlar</Link>
+                <Link to={"/customers"}>{Translate("Контакты", "Kontaktlar", "Contact Us")}</Link>
               </li>
 
               <li>
-                <select name="" id="">
-                  <option value="UZ">
-                    <img src="/images/uzb.png" alt="" />
-                    UZ
-                  </option>
-                  <option value="RU">RU</option>
+                <select
+                  name=""
+                  id=""
+                  onChange={(e) => {
+                    localStorage.setItem("language", e.target.value);
+                    window.location.reload();
+                  }}
+                >
+                  {language.map((item, idx) => (
+                    <option key={idx} value={item}>
+                      {item}
+                    </option>
+                  ))}
                 </select>
               </li>
               <li>
                 <button className="hover-effect">
-                  <span>Biz bilan boshlang!</span>
+                  <span>{Translate("Начните с нами!", "Biz bilan boshlang!", "Start with us!")}</span>
                 </button>
               </li>
             </ul>

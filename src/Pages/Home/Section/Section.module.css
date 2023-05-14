@@ -1,0 +1,39 @@
+.section__box {
+    width: 32%;
+    background-color: var(--dark);
+    transition: .3s;
+    cursor: pointer;
+    padding: 50px;
+}
+
+.section__box svg {
+    width: 100px;
+    transition: .3s;
+    fill: var(--orange);
+    margin-bottom: 20px;
+}
+
+.section__box h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--white);
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.section__box p {
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.row {
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+.section__box:hover {
+    background: var(--orange);
+}
+
+.section__box:hover svg {
+    fill: var(--white);
+}
