@@ -9,6 +9,12 @@ function Navbar() {
 
 
   const Language = () => {
+    let languageStorage = localStorage.getItem("language")
+
+    if (languageStorage !== "RU" && languageStorage !== "EN" && languageStorage !== "UZ") {
+      localStorage.setItem("language", "UZ")
+    }
+
     const lan = languageList;
     const target = lan.splice(
       lan.indexOf(localStorage.getItem("language") || "RU"),
@@ -37,7 +43,7 @@ function Navbar() {
                 <Link to={"/services"}>{Translate("Услуги", "Xizmatlar", "Services")}</Link>
               </li>
               <li>
-                <Link to={"/customers"}>{Translate("Контакты", "Kontaktlar", "Contact Us")}</Link>
+                <Link to={"/contact"}>{Translate("Контакты", "Kontaktlar", "Contact Us")}</Link>
               </li>
 
               <li>

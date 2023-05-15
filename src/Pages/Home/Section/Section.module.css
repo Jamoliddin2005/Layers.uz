@@ -31,7 +31,9 @@
 }
 
 .section__box:hover {
-    background: var(--orange);
+    background: url("../../../../public/images/section-box-bg.png") no-repeat;
+    background-size: cover;
+    background-color: var(--orange);
 }
 
 .section__box:hover svg {
