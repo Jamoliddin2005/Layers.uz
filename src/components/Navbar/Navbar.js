@@ -1,31 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import classes from "./Navbar.module.css";
 import { Link } from "react-router-dom";
 import Translate from "../Translate/Translate"
 
-function Navbar() {
-  const [languageList] = useState(["RU", "EN", "UZ"]);
-  const [language, setLanguage] = useState([]);
+function Navbar({ language }) {
 
-
-  const Language = () => {
-    let languageStorage = localStorage.getItem("language")
-
-    if (languageStorage !== "RU" && languageStorage !== "EN" && languageStorage !== "UZ") {
-      localStorage.setItem("language", "UZ")
-    }
-
-    const lan = languageList;
-    const target = lan.splice(
-      lan.indexOf(localStorage.getItem("language") || "RU"),
-      1
-    );
-    lan.unshift(target[0]);
-    setLanguage(lan);
-  };
-  useEffect(() => {
-    Language();
-  }, []);
 
   return (
     <nav className={classes.Navbar}>
