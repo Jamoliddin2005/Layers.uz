@@ -25,12 +25,15 @@
   --orange: #f35444;
   --dark: #151823;
   --white: #fff;
+  --red: red;
+  --Montserrat: 'Montserrat', sans-serif;
+  --Catamaran: 'Catamaran', sans-serif;
 }
 
 
 button.hover-effect {
   padding: 13px 30px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--Montserrat);
   color: var(--white);
   font-size: 18px;
   cursor: pointer;

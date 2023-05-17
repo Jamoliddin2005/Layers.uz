@@ -1,0 +1,53 @@
+.About {
+    padding: 100px 0;
+}
+
+.About .row {
+    align-items: center;
+}
+
+.About h1 {
+    text-align: center;
+    font-family: var(--Montserrat);
+    color: var(--orange);
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+.About .About_left,
+.About .About_right {
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.About .About_left img {
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+
+.About .About_left img:last-child {
+    position: absolute;
+    top: 26%;
+    left: 14.5%;
+    width: 200px;
+    height: 200px;
+    transition: .7s;
+}
+
+.About .About_left .center_img:hover {
+    transform: rotate(360deg);
+}
+
+h2 {
+    font-family: var(--Montserrat);
+    color: #222222;
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 40px;
+}

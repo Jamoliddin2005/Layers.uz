@@ -11,7 +11,7 @@
 
 .navbar__left a {
   font-size: 35px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--Montserrat);
   color: var(--white);
   font-weight: 700;
   letter-spacing: 1.2px;
@@ -30,7 +30,7 @@
 
 .navbar__right ul li a {
   font-size: 18px;
-  font-family: 'Catamaran', sans-serif;
+  font-family: var(--Catamaran);
   color: var(--white);
   font-weight: 500;
   font-size: 18px;
@@ -41,7 +41,7 @@
   content: "";
   width: 0%;
   height: 1px;
-  background-color: red;
+  background-color: var(--red);
   transition: .3s;
   display: block;
 }
@@ -56,7 +56,7 @@
 
 .Navbar select {
   background-color: var(--dark);
-  color: white;
+  color: var(--white);
   padding: 10px 12px;
   cursor: pointer;
   outline: none;
