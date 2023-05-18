@@ -18,20 +18,12 @@ function About() {
             />
           </div>
           <div className={classes.About_right}>
-            <h2>
-              We Are Professional <br /> Digital Team
-            </h2>
-            <h4>
-              Our web design company specializes in the professional creation of
-              unique sites.
-            </h4>
+            <h2>Layers</h2>
             <p>
-              Our team constantly monitors the emergence of new technologies
-              that we are not afraid to implement in web projects. We create
-              only selling websites – this is an achievement by drawing the
-              design and working out usability. The approach to each new project
-              is individual, we treat every customer equally, regardless of the
-              size of the company and its budget.
+              <span>Layers -</span> bu turli xildagi saytlarni yaratuvchi yangi
+              kompaniya. Biz ishonamizki siz bizdan minnatdor bo'lasiz. Chunki
+              biz sifatga va tezlikga katta ahamiyat qaratamiz!
+              
             </p>
           </div>
         </div>

@@ -30,11 +30,15 @@
     cursor: pointer;
 }
 
+.About .About_left {
+    display: flex;
+    justify-content: center;
+}
 
 .About .About_left img:last-child {
     position: absolute;
     top: 26%;
-    left: 14.5%;
+    left: 35.5%;
     width: 200px;
     height: 200px;
     transition: .7s;
@@ -44,10 +48,21 @@
     transform: rotate(360deg);
 }
 
-h2 {
+.About h2 {
     font-family: var(--Montserrat);
-    color: #222222;
+    color: var(--dark);
     font-weight: 500;
-    font-size: 40px;
+    font-size: 45px;
     margin-bottom: 40px;
+}
+
+.About p {
+    font-size: 22px;
+    line-height: 29px;
+    color: #666666;
+    font-family: var(--Catamaran);
+}
+
+.About p span {
+    color: var(--orange);
 }
