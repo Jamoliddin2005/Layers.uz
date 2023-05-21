@@ -23,7 +23,6 @@ function About() {
               <span>Layers -</span> bu turli xildagi saytlarni yaratuvchi yangi
               kompaniya. Biz ishonamizki siz bizdan minnatdor bo'lasiz. Chunki
               biz sifatga va tezlikga katta ahamiyat qaratamiz!
-              
             </p>
           </div>
         </div>
